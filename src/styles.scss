@@ -7,3 +7,28 @@ body
 {
     padding: 0.75rem 1rem;
 }
+
+.mb-0
+{
+    margin-bottom: 0!important;
+}
+
+.ui
+{
+    &.grid
+    {
+        .row
+        {
+            &.border-bottom
+            {
+                padding-bottom: 0;
+                border-bottom: 1px solid #ddd;
+
+                + .row
+                {
+                    padding-top: 0;
+                }
+            }
+        }
+    }
+}
